@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>El Rincon del Electricista</title>
+</head>
+<body class="calculo">
+    <a id="inicio" href="./index.html#header">Volver al Home</a>
+    <h1>Bienvenido al Programa de Presupuesto de Mano de Obra de Eléctricidad</h1>
+    <p>Este programa te ayudará a calcular un presupuesto aproximado.</p>
+    <p>------------------------------------------------------------</p>
+    <label for="valorUnitario">Ingrese el valor unitario de Boca de Electricidad:</label>
+    <input type="number" id="valorUnitario">
+    <div id="opciones">
+        <p>Seleccione una opción:</p>
+        <input type="radio" name="opcion" value="1" id="opcion1">
+        <label for="opcion1">Calcular presupuesto por cantidad total de Bocas</label>
+        <input type="radio" name="opcion" value="2" id="opcion2">
+        <label for="opcion2">Calcular presupuesto de Bocas por circuitos</label>
+    </div>
+    <div id="resultado">
+    <a class="calcular" id="calcular">Calcular</a>
+    <a class="limpiar" id="limpiar">Limpiar</a>
+    </div>
+    <footer class="pie-calculo" id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Franco Libertini Design</h2>
+                <p>Somos expertos en la creacion de tus sueños</p>
+            </div>
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitch'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-discord-alt'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line">
+        </div>
+    </footer>
+    <script src="./js/script-calculo.js"></script>
+</body>
+</html>
