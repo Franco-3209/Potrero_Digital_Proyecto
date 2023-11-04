@@ -66,12 +66,14 @@ header {
     position: fixed;
     top: 0;
     right: 0;
+    font-weight: 600;
     padding-bottom: 4vw;
     padding-left: 4vh;
     width: 25vw;
     height: 100%;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-image: linear-gradient(to top, #30d0d0d5 0%, #330867db 100%);
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -88,6 +90,36 @@ header {
     color: #fff;
     text-decoration: none;
 }
+
+.menu-navegacion a:hover {
+    background: #5360f3;
+    color: #050801;
+    box-shadow: 0 0 5px #5360f3,
+        0 0 25px #5360f3,
+        0 0 50px #5360f3,
+        0 0 200px #5360f3;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.menu-navegacion a:nth-child(1) {
+    filter: hue-rotate(310deg);
+}
+.menu-navegacion a:nth-child(2) {
+    filter: hue-rotate(220deg);
+}
+.menu-navegacion a:nth-child(3) {
+    filter: hue-rotate(80deg);
+}
+.menu-navegacion a:nth-child(4) {
+    filter: hue-rotate(160deg);
+}
+.menu-navegacion a:nth-child(5) {
+    filter: hue-rotate(120deg);
+}
+.menu-navegacion a:nth-child(6) {
+    filter: hue-rotate(40deg);
+}
+
 
 .titulo {
     font-size: 60px;
@@ -173,6 +205,7 @@ header {
 }
 
 .imagen-light {
+    z-index: 998;
     position: fixed;
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -256,45 +289,6 @@ a {
     letter-spacing: 4px;
     overflow: hidden;
 }
-
-a:hover {
-    background: #5360f3;
-    color: #050801;
-    box-shadow: 0 0 5px #5360f3,
-        0 0 25px #5360f3,
-        0 0 50px #5360f3,
-        0 0 200px #5360f3;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-}
-
-a:nth-child(1) {
-    filter: hue-rotate(40deg);
-}
-a:nth-child(2) {
-    filter: hue-rotate(80deg);
-}
-a:nth-child(3) {
-    filter: hue-rotate(120deg);
-}
-a:nth-child(4) {
-    filter: hue-rotate(160deg);
-}
-a:nth-child(5) {
-    filter: hue-rotate(220deg);
-}
-a:nth-child(6) {
-    filter: hue-rotate(360deg);
-}
-a:nth-child(7) {
-    filter: hue-rotate(350deg);
-}
-a:nth-child(8) {
-    filter: hue-rotate(300deg);
-}
-a:nth-child(9) {
-    filter: hue-rotate(340deg);
-}
-
 
 .card {
     position: relative;
@@ -409,13 +403,12 @@ footer {
 .social-media {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+
 }
 
 .social-media-icon {
     display: inline-block;
-    margin: 0px;
-    margin-left: 30px;
     width: 60px;
     height: 60px;
     border: 1px solid #fff;
@@ -423,6 +416,7 @@ footer {
     text-align: center;
     color: #fff;
     padding: 0px 0px;
+    letter-spacing: initial;
 }
 
 .social-media-icon:hover {
@@ -478,6 +472,7 @@ footer {
     margin-top: 20px;
     font-weight: bold;
 }
+
 
 .pie-calculo {
     margin-top: 60px;
@@ -545,12 +540,20 @@ footer {
 
 /* Media Query para Celular */
 
-@media screen  and (max-widht: 500px) {
+@media screen  and (max-width: 500px) {
     .menu-navegacion {
-        width: 65vw;
+        width: 75vw;
+        height: 100vh;
+        font-weight: 100;
+        background-image: linear-gradient(to top, #30d0d0 0%, #330867 100%);
     }
 
+    a {
+        padding: 0 0;
+        margin: 0 0;
+    }
     .hamburguer { 
+        z-index: 5;
         top: 20px;
         right: 20px;
     }
@@ -571,15 +574,44 @@ footer {
         width: 95%;
     }
 
+    .calculo #resultado {
+        display: flex;
+        justify-content: space-around;
+    }
     .social-media {
         width: 100%;
+        gap: 10px;
     }
 
+    .social-media-icon {
+        width: 50px;
+        height: 50px;
+    }
+  
     .social-media i {
         margin-left: 0;
+        line-height: 50px;
     }
 
     .contact-us {
         width: 90%;
+    }
+
+    
+}
+
+/* Media Query para celular (Landscape) */
+
+@media screen and (max-height: 450px) {
+    .menu-navegacion {
+        width: 75vw;
+        height: 100vh;
+        font-weight: 100;
+        background-image: linear-gradient(to top, #30d0d0 0%, #330867 100%);
+        
+    }
+    .menu-navegacion a {
+        margin: 0 0;
+
     }
 }
