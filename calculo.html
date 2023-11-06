@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>El Rincon del Electricista</title>
 </head>
-<body class="calculo">
-    <a id="inicio" href="./index.html#header">Volver al Home</a>
+<body>
+    <section class="calculo">
+    <a id="inicio" href="./index.html#header"><button> Volver al Home</button></a>
     <h1>Bienvenido al Programa de Presupuesto de Mano de Obra de Eléctricidad</h1>
     <p>Este programa te ayudará a calcular un presupuesto aproximado.</p>
     <p>------------------------------------------------------------</p>
@@ -16,15 +17,23 @@
     <input type="number" id="valorUnitario">
     <div id="opciones">
         <p>Seleccione una opción:</p>
+        <br>
+        <br>
         <input type="radio" name="opcion" value="1" id="opcion1">
         <label for="opcion1">Calcular presupuesto por cantidad total de Bocas</label>
         <input type="radio" name="opcion" value="2" id="opcion2">
         <label for="opcion2">Calcular presupuesto de Bocas por circuitos</label>
     </div>
     <div id="resultado">
+    </div>
+    <div >
     <a class="calcular" id="calcular">Calcular</a>
     <a class="limpiar" id="limpiar">Limpiar</a>
+    <br>
+    <br>
+    <p id="mensaje" class="mensaje"></p>
     </div>
+</section>
     <footer class="pie-calculo" id="contacto">
         <div class="contenedor footer-content">
             <div class="contact-us">
