@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Permanent+Marker&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -47,6 +51,20 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.logofl {
+    color: black;
+    width: 300px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.head p {
+    max-width: 1000px;
 }
 
 .hamburguer {
